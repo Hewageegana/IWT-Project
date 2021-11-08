@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+
+<script src="../js/complain.js"></script>
+
+	<title>insurance pvt.Ltd</title>
+
+		<!-- >Font awesome site link to get some social media logoes<-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity=crossorigin="anonymous">
+
+	<!-- >google fonts<-->
+	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+	
+	<!-- >Header & Footer css files<-->
+	<link rel="stylesheet" href="../styles/header.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/slider.css">
+
+</head>
+<body class="bg">
+
+<header class="header">
+	<div class="hlogo">
+		<img src="../images/logo.jpg">
+	</div>
+	<i class="fa fa-bars menu-toggle"></i>
+
+	<ul class="nav">
+		
+		<li class="linein"><a href="homepage.html">Home</a></li>
+		<li class="linein"><a href="online payment.html">Make A Online Payment</a></li>
+		<li class="linein"><a href="Make_a_claim.html">Make A Claim</a></li>
+		<li class="linein"><a href="ourstory.html">Our Story</a></li>
+		<li class="linein"><a href="approvedgarages.html">Services</a></li>
+
+		
+
+		<li class="linein">
+			<a href="#">
+				<i class="fa fa-user"></i>
+			
+			<i class="fa fa-chevron-down"style="font-size: .8em;"></i>
+		</a>
+			<ul>
+				<li class="linein"><a href="loginform.html">Dashboard</a></li>
+				<li class="linein"><a href="#" class="">Preferences</a></li>
+				<li class="linein"><a href="#" class="">Settings</a></li>
+				<li class="linein"><a href="#" class="logout">Signout</a></li>
+			</ul>
+		</li>
+	
+
+	</ul>
+</header><br>
+
+
+
+
+<style>
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+  justify-content: center;
+ background-attachment:green;  
+}  
+
+.column1
+{
+width:100%;
+}
+
+.column2{
+width:55%;
+float: left;
+  padding: 10px;
+  height: 300px; 
+  justify-content:left;
+  
+
+}
+
+
+.button1 {
+background-color: #cccccc;
+border-radius: 12px;
+  padding: 20px;
+  font-size: 12px;
+  margin: 4px;
+  
+  }
+
+</style>
+</head>
+
+<body style="background-color:#f1f1f1;">
+
+<div style ="padding:10px;">
+
+<div style="background-color: yellow; height: 45px; width: 45%;"><h3 style="padding: 10px;">COMPLAINT DETAILS</h3></div>
+
+<p>We take the quality of our service very seriously. Please provide us with the details of your complaint so that we can attend to it immediately.</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<input type ="submit" class="button" name ="button1" value ="Customer Grievance Policy" onclick="loadPdf('button1')" style="width: 180px; height: 40px; border-radius: 10px;" required>
+
+<center><a href="images/autocare.pdf"><p style="font-family: arial; font-style: none; font-size: 18px; float: right;" class="text1" id="para"></p></a></center><br>
+
+</div>
+
+
+<form method="post" action="../php/makeacomplaint.php">
+<div style ="padding: 0px 200px 0px 50px;" >
+
+  <div class="column" >
+  
+    <textarea id="address" name="complain" rows="15" cols="70" required placeholder="Details of the complaint*" required></textarea>
+	
+ 
+</div>
+  </div>
+  
+  <div class="column" >
+   
+  
+<input type ="text" id="field2" name ="date" style ="width:500px; height:36px;" required placeholder="Date of incident" required="" >
+
+<br><br>
+
+<input type ="text" id="field2" name ="name" style ="width:500px;height:36px;" required placeholder="Complain made against -Name " required="" >
+
+<br><br>
+
+<input type ="text" id="field2" name ="licence" style ="width:500px; height:36px;" required placeholder="Complain made against - Licence No" required="" >
+
+<br><br>
+<input type ="text" id="field2" name ="nic" style ="width:500px; height:36px;" required placeholder="Complain made against -NIC " required="*" >
+
+<br><br>
+<input type ="text" id="field2" name ="amount" style ="width:500px;height:36px;" required placeholder="Misappropriation Amount "  >
+  </div>
+ 
+  
+  <div class="column1">
+  <h3 > CONTACT DETAILS </h3>
+<P>Please provide with your details so that we can get in touch with you to assist this complain</p></div>
+
+
+<div class="column2">
+
+<!--<input type ="text" id="field2" name ="field2" style ="width:700px; height:36px;" required placeholder="Name"><br><br>-->
+
+<input type ="text" id="field2" name ="number" style ="width:700px; height:36px;" required placeholder="Contact No"  ><br><br>
+
+<input type ="text" id="field2" name ="email" style ="width:700px; height:36px;" required placeholder="Email"  ><br><br>
+
+Policy Issue Branch *<select name="branch" style="height: 33px;width: 40%;">
+<option> Colombo South (Kohuwala)</option>
+<option> Kiribathgoda</option>
+<option> Kandy</option>
+<option> Gampaha</option>
+<option> Negombo</option>
+<option> Mathara</option>
+</select>
+</div>
+
+<div class="coloun2">
+<textarea id="address" name="address" rows="10" cols="70" required placeholder="Address"></textarea><br><br>
+<input type ="text" id="field2" name ="policy" style ="width:370px; height:36px;" required placeholder="Policy Number"  >
+</div>
+
+<br>
+<input type ="submit" class="button22" name ="button2" value ="Send" style="width: 100px; height: 25px;">
+
+</form>
+
+</body>
+
+
+
+
+
+
+
+
+	</body><br><br><br>
+
+
+
+<!--<div class="page-wrapper"-->
+	</div> 
+<!--***********************************************************************************************************************************************************content-->
+<!--page wrapper-->	
+
+<footer>
+<div class="footer">
+	<div class="footer-content">
+
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>AutoCare</span>Insurance</h1>
+			<p>
+			
+			<h4>Registered Office<br>AutoCare Insurence Pvt.Ltd</h4><br>
+		#12/D,Edirisooriya Mawatha|colombo 07| Sri-Lanka.</p><br>
+
+			<div class="contact">
+				<span><i class="fas fa-phone"></i>&nbsp; 071-481 3649</span>
+				<span><i class="fas fa-envelope"></i>&nbsp; autocareinsuarence@gmail.com</span>
+			</div>
+
+			<div class="socials">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+				
+
+				
+
+		<div class="footer-section links">
+		
+			<h2>Quick Links...</h2><br>
+			<ul>
+			<a href="online payment.html"><li>Make Online Payment</li></a>
+			<a href="make a complaint.html"><li>Make A Complaint</li></a>
+			<a href="#"><li>Inquires</li></a>
+			<a href="Make_a_claim.html"><li>Make A Claim</li></a>
+			<a href="ourstory.html"><li>Contact Us</li></a>
+			<a href="#"><li>Terms & Conditions</li></a>
+			</ul>
+		</div>
+		<div class="footer-section contact-form" align="right">
+			<h2 align="center">Contact Us....</h2>
+			<br>
+			<form action="index.html"method="post">
+			<input type="email" name="email" class="text-input contact-input"  placeholder="your email....."pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"required ><br><br>
+			<textarea name="message" class="text-input contact-input" placeholder="Your message....."></textarea><br>
+			<button class="buttn1" type="submit"  class="btn btn-big" onclick="function sendFeedback(buttn1)">
+				<i class="fas fa-envelope"></i>
+				Send
+			</button>
+		
+		</form>
+	</div>
+
+		</div>
+
+
+
+
+<div class="footer-bottom">
+	&copy; Allright reserved by | MLB_PG_07.02_10
+</div>
+</div>
+</footer>
+<!--page wrapper-->
+
+
+
+</html>

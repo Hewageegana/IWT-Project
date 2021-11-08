@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+		
+<link rel ="stylesheet" href="styles/payment_method.css" />
+
+
+	<title>insurance pvt.Ltd/payment</title>
+
+		<!-- >Font awesome site link to get some social media logoes<-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity=crossorigin="anonymous">
+
+	<!-- >google fonts<-->
+	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+	
+	<!-- >Header & Footer css files<-->
+	<link rel="stylesheet" href="../styles/header.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/slider.css">
+
+</head>
+<body class="bg">
+
+<header class="header">
+	<div class="hlogo"> 
+		<img src="../images/logo.jpg">
+	</div>
+	<i class="fa fa-bars menu-toggle"></i>
+
+	<ul class="nav">
+		
+		<li class="linein"><a href="homepage.html">Home</a></li>
+		<li class="linein"><a href="online payment.html">Make A Online Payment</a></li>
+		<li class="linein"><a href="Make_a_claim.html">Make A Claim</a></li>
+		<li class="linein"><a href="ourstory.html">Our Story</a></li>
+		<li class="linein"><a href="approvedgarages.html">Services</a></li>
+
+		
+
+		<li class="linein">
+			<a href="#">
+				<i class="fa fa-user"></i>
+			
+			<i class="fa fa-chevron-down"style="font-size: .8em;"></i>
+		</a>
+			<ul>
+				<li class="linein"><a href="loginform.html">Dashboard</a></li>
+				<li class="linein"><a href="#" class="">Preferences</a></li>
+				<li class="linein"><a href="#" class="">Settings</a></li>
+				<li class="linein"><a href="#" class="logout">Signout</a></li>
+			</ul>
+		</li>
+	
+
+	</ul>
+</header><br><br>
+
+
+
+
+
+
+<h1 style="font-family: arial;margin: 25px;text-align:left;">New Payment Method</h1><br>
+<div class = "payment" style="padding: 40px;">
+
+<form action = "../php/onlinepayment.php" method ="POST">
+
+<label id="fname1" ><b> Name : </b>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type ="text"  id ="field1" name="name" style =" width:500px; height:32px; padding:15px"  placeholder=" Type your Name " required><br><br>
+
+
+<label style ="width:800px ; height:32px;" ><b> Payment Method : </b>&nbsp; &nbsp; &nbsp;  </label>
+	<select name="payment" style ="width:15%; height:32px;">
+	<option>Select</option>
+	<option>Cash</option>
+	<option>Credit Card</option>
+	<option>Debit Card</option>
+	</select>
+	<br><br>
+
+
+<b>User Groups :</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select class="s1" name="groups" style="height: 32px;">
+	<option>All</option>
+	<option>Guest</option>
+	<option>Registered</option>
+	<option>Wholesale</option>
+</select><br><br>
+
+<b>Descriptoin </b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description" style="width:500px;  height:32px; outline: none; margin: 25px;padding:25px" placeholder="description"><br/>
+
+<label ><b>Add Payment Method :</b> </label>
+&nbsp;&nbsp;&nbsp;&nbsp;<select style="height:32px; " name="method">
+	<option>Visa</option>
+	<option>Master</option>
+	<option>Discover</option>
+	<option>American Express</option>
+</select>
+<br><br><br>
+
+<table>
+<tr>
+<td><i>Pay with card</i></td>
+
+<td><img  src="../images/th.jpg"  class ="card" width ="300px" height ="50px"></td>
+</tr>
+
+</table>
+
+
+<hr style="border-color: black; border-width: 2px;"> <br>
+
+<b>Card Holder's Name </b><br>
+<input type="text" name="cname" style="width:44%;  height:32px; outline: none;margin: 25px;" placeholder="Your Name" required=""><br/><br>
+<b>Card Number</b><br>
+
+<input type="text" name="cardnumber" style="width:44%;  height:32px; outline: none;margin: 25px;" placeholder="Card Number" required=""><br/><br>
+<b>Expired Date </b><input type="text" name="date" style="width:25%;  height:32px; outline: none;margin: 25px;padding :10px ;" placeholder="Expired Date" required=""><b>C/V</b><input type="text" name="cv" style="width:15%;  height:32px; outline: none;margin: 25px;" placeholder="C/V" required=""><br/><br>
+
+<input type="submit"class="button" id="submitbtn" value=" Add payment method " style="border-radius: 6px; width: 175px; height: 30px;">
+
+
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+
+
+
+<!--<div class="page-wrapper"-->
+	</div> 
+<!--***********************************************************************************************************************************************************content-->
+<!--page wrapper-->	
+
+<footer>
+<div class="footer">
+	<div class="footer-content">
+
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>AutoCare</span>Insurance</h1>
+			<p>
+			
+			<h4>Registered Office<br>AutoCare Insurence Pvt.Ltd</h4><br>
+		#12/D,Edirisooriya Mawatha|colombo 07| Sri-Lanka.</p><br>
+
+			<div class="contact">
+				<span><i class="fas fa-phone"></i>&nbsp; 071-481 3649</span>
+				<span><i class="fas fa-envelope"></i>&nbsp; autocareinsuarence@gmail.com</span>
+			</div>
+
+			<div class="socials">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+				
+
+				
+
+		<div class="footer-section links">
+		
+			<h2>Quick Links...</h2><br>
+			<ul>
+			<a href="online payment.html"><li>Make Online Payment</li></a>
+			<a href="make a complaint.html"><li>Make A Complaint</li></a>
+			<a href="#"><li>Inquires</li></a>
+			<a href="Make_a_claim.html"><li>Make A Claim</li></a>
+			<a href="ourstory.html"><li>Contact Us</li></a>
+			<a href="#"><li>Terms & Conditions</li></a>
+			</ul>
+		</div>
+		<div class="footer-section contact-form" align="right">
+			<h2 align="center">Contact Us....</h2>
+			<br>
+			<form action="index.html"method="post">
+			<input type="email" name="email" class="text-input contact-input"  placeholder="your email....."pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"required ><br><br>
+			<textarea name="message" class="text-input contact-input" placeholder="Your message....."></textarea><br>
+			<button class="buttn1" type="submit"  class="btn btn-big" onclick="function sendFeedback(buttn1)">
+				<i class="fas fa-envelope"></i>
+				Send
+			</button>
+		
+		</form>
+	</div>
+
+		</div>
+
+
+
+
+<div class="footer-bottom">
+	&copy; Allright reserved by | MLB_PG_07.02_10
+</div>
+</div>
+</footer>
+<!--page wrapper-->
+
+
+
+</html>

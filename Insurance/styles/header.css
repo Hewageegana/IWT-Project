@@ -1,0 +1,104 @@
+/*body*/
+.bg{
+	padding:0px;
+	margin:0px;
+	background: #f6f6f6;
+	font-family: 'Lora',serif;
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+/*navigation bar styling*/
+
+
+.header{
+	background: black;
+	height: 66px;
+}
+
+header img{
+	width: 170px;
+	height:55px;
+	position:absolute;
+}
+
+header * {
+	color: white;
+}
+
+ .hlogo{
+	float: left;
+	height: inherit;
+	margin-left: 2em;
+	
+}
+
+header .logo-text{
+	margin: 9px;
+	font-family: 'arial',serif;
+}
+
+header .logo-text span{
+	color: red;
+
+}
+
+.nav{
+	float: right;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	
+}
+.linein{
+	float: left;
+	position: relative;
+
+}
+header ul li ul{
+	position: absolute;
+	top:66px;
+	right: 0px;
+	width: 180px;
+	display: none;
+}
+
+header ul li:hover ul{
+	display: block;
+}
+header ul li ul li{
+	width: 100%;
+
+}
+header ul li ul li a{
+	padding: 10px;
+	background: white;
+	color: #444;
+}
+header ul li ul li a.logout{
+	color: red;
+}
+
+
+header ul li ul li a:hover{
+	background: grey;
+}
+
+
+header ul li a{
+	display: block;
+	padding: 21px;
+	font-size: 1.1em;
+	text-decoration: inherit;
+}
+
+header ul li a:hover{
+	background: red;
+	transition: 0.75s;
+}
+header .menu-toggle{
+	display: none;
+}

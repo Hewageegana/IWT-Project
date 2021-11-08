@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script src="../js/password.js"></script>
+	<script src="../js/myscript1.js"></script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px ;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border:  1px solid #6c645a;
+  background: #ffffff;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height:20px
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn1 {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn1 {
+     width: 100%;
+  }
+}
+</style>
+
+	<title>insurance pvt.Ltd</title>
+
+		<!-- >Font awesome site link to get some social media logoes<-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity=crossorigin="anonymous">
+
+	<!-- >google fonts<-->
+	<link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+
+	
+	<!-- >Header & Footer css files<-->
+	<link rel="stylesheet" href="../styles/header.css">
+	<link rel="stylesheet" href="../styles/footer.css">
+	<link rel="stylesheet" href="../styles/slider.css">
+
+	
+
+</head>
+<body class="bg">
+
+<header class="header">
+	<div class="hlogo">
+		<img src="../images/logo.jpg">
+	</div>
+	<i class="fa fa-bars menu-toggle"></i>
+
+	<ul class="nav">
+		
+		<li class="linein"><a href="homepage.html">Home</a></li>
+		<li class="linein"><a href="online payment.html">Make A Online Payment</a></li>
+		<li class="linein"><a href="Make_a_claim.html">Make A Claim</a></li>
+		<li class="linein"><a href="ourstory.html">Our Story</a></li>
+		<li class="linein"><a href="approvedgarages.html">Services</a></li>
+
+		
+
+		<li class="linein">
+			<a href="#">
+				<i class="fa fa-user"></i>
+			
+			<i class="fa fa-chevron-down"style="font-size: .8em;"></i>
+		</a>
+			<ul>
+				<li class="linein"><a href="loginform.html">Dashboard</a></li>
+				<li class="linein"><a href="#" class="">Preferences</a></li>
+				<li class="linein"><a href="#" class="">Settings</a></li>
+				<li class="linein"><a href="#" class="logout">Signout</a></li>
+			</ul>
+		</li>
+	
+
+	</ul>
+</header><br>
+
+<table>
+<th>    </th>
+<td>
+
+	
+  <div class="container">
+    <h1><b>Let's get your account<br/> set up</b></h1>
+     
+    
+    <hr>
+<form onsubmit="return checkPassword()" method="post" action="../php/signup.php">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Create a password</b></label>
+    <input type="password" id="pwd" placeholder="Enter Password" name="password" required>
+
+    <label for="psw-repeat"><b>Confirm password</b></label>
+    <input type="password" id="confpwd" placeholder="Repeat Password" name="confirm" required>
+
+    <div class="clearfix">
+      
+      <button type="submit" class="signupbtn1">Signup</button>
+    </div>
+  </div>
+</form>
+</td>
+       
+<td style="background-color: black;">
+
+	<center><img src="../images/logo.jpg" width="60%" height="60%" ></center><br><br>
+	<center><p style="font-family: arial; color: white; font-size: 25px;">AutoCare<br>Insurence
+	pvt.Ltd</font></p></center>
+
+</td>
+</table>
+
+
+
+
+
+
+
+	</body>
+
+
+
+<!--<div class="page-wrapper"-->
+	</div> 
+<!--***********************************************************************************************************************************************************content-->
+<!--page wrapper-->	
+
+<footer>
+<div class="footer">
+	<div class="footer-content">
+
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>AutoCare</span>Insurance</h1>
+			<p>
+			
+			<h4>Registered Office<br>AutoCare Insurence Pvt.Ltd</h4><br>
+		#12/D,Edirisooriya Mawatha|colombo 07| Sri-Lanka.</p><br>
+
+			<div class="contact">
+				<span><i class="fas fa-phone"></i>&nbsp; 071-481 3649</span>
+				<span><i class="fas fa-envelope"></i>&nbsp; autocareinsuarence@gmail.com</span>
+			</div>
+
+			<div class="socials">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+				
+
+				
+
+		<div class="footer-section links">
+		
+			<h2>Quick Links...</h2><br>
+			<ul>
+			<a href="online payment.html"><li>Make Online Payment</li></a>
+			<a href="make a complaint.html"><li>Make A Complaint</li></a>
+			<a href="#"><li>Inquires</li></a>
+			<a href="Make_a_claim.html"><li>Make A Claim</li></a>
+			<a href="ourstory.html"><li>Contact Us</li></a>
+			<a href="#"><li>Terms & Conditions</li></a>
+			</ul>
+		</div>
+		<div class="footer-section contact-form" align="right">
+			<h2 align="center">Contact Us....</h2>
+			<br>
+			<form action="index.html"method="post">
+			<input type="email" name="email" class="text-input contact-input"  placeholder="your email....."pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"required ><br><br>
+			<textarea name="message" class="text-input contact-input" placeholder="Your message....."></textarea><br>
+			<button class="buttn1" type="submit"  class="btn btn-big" onclick="function sendFeedback(buttn1)">
+				<i class="fas fa-envelope"></i>
+				Send
+			</button>
+		
+		</form>
+	</div>
+
+		</div>
+
+
+
+
+<div class="footer-bottom">
+	&copy; Allright reserved by | MLB_PG_07.02_10
+</div>
+</div>
+</footer>
+<!--page wrapper-->
+
+
+
+</html>
