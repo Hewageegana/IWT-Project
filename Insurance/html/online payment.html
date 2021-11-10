@@ -2,7 +2,7 @@
 <html>
 <head>
 		
-<link rel ="stylesheet" href="styles/payment_method.css" />
+<link rel ="stylesheet" href="../styles/payment_method.css" />
 
 
 	<title>insurance pvt.Ltd/payment</title>
@@ -31,9 +31,9 @@
 	<ul class="nav">
 		
 		<li class="linein"><a href="homepage.html">Home</a></li>
+		<li class="linein"><a href="quotation.html">Motor Insurance</a></li>
 		<li class="linein"><a href="online payment.html">Make A Online Payment</a></li>
 		<li class="linein"><a href="Make_a_claim.html">Make A Claim</a></li>
-		<li class="linein"><a href="ourstory.html">Our Story</a></li>
 		<li class="linein"><a href="approvedgarages.html">Services</a></li>
 
 		
@@ -45,7 +45,7 @@
 			<i class="fa fa-chevron-down"style="font-size: .8em;"></i>
 		</a>
 			<ul>
-				<li class="linein"><a href="loginform.html">Dashboard</a></li>
+				<li class="linein"><a href="../loginform.html">Dashboard</a></li>
 				<li class="linein"><a href="#" class="">Preferences</a></li>
 				<li class="linein"><a href="#" class="">Settings</a></li>
 				<li class="linein"><a href="#" class="logout">Signout</a></li>
@@ -64,14 +64,14 @@
 <h1 style="font-family: arial;margin: 25px;text-align:left;">New Payment Method</h1><br>
 <div class = "payment" style="padding: 40px;">
 
-<form action = "../php/onlinepayment.php" method ="POST">
+<form action = "#payment method" ,target ="_blank" ,method ="POST" onsubmit ="return checkpassword()" >
 
 <label id="fname1" ><b> Name : </b>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type ="text"  id ="field1" name="name" style =" width:500px; height:32px; padding:15px"  placeholder=" Type your Name " required><br><br>
+<input type ="text"  id ="field1" name="field1" style =" width:500px; height:32px; padding:15px"  placeholder=" Type your Name " required><br><br>
 
 
 <label style ="width:800px ; height:32px;" ><b> Payment Method : </b>&nbsp; &nbsp; &nbsp;  </label>
-	<select name="payment" style ="width:15%; height:32px;">
+	<select style ="width:15%; height:32px;">
 	<option>Select</option>
 	<option>Cash</option>
 	<option>Credit Card</option>
@@ -79,30 +79,18 @@
 	</select>
 	<br><br>
 
-
-<b>User Groups :</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <select class="s1" name="groups" style="height: 32px;">
-	<option>All</option>
-	<option>Guest</option>
-	<option>Registered</option>
-	<option>Wholesale</option>
-</select><br><br>
+<b>User Groups :</b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" style="padding:25px;"> All &nbsp;<input type="checkbox" style="padding:25px;" > Guest &nbsp; <input type="checkbox" style="padding:25px;">  Registered user &nbsp; <input type="checkbox" style="padding:25px;"> Wholesale <br>
 
 <b>Descriptoin </b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="description" style="width:500px;  height:32px; outline: none; margin: 25px;padding:25px" placeholder="description"><br/>
 
 <label ><b>Add Payment Method :</b> </label>
-&nbsp;&nbsp;&nbsp;&nbsp;<select style="height:32px; " name="method">
-	<option>Visa</option>
-	<option>Master</option>
-	<option>Discover</option>
-	<option>American Express</option>
-</select>
 <br><br><br>
 
 <table>
 <tr>
 <td><i>Pay with card</i></td>
 
-<td><img  src="../images/th.jpg"  class ="card" width ="300px" height ="50px"></td>
+<td><img  src="images/th.jpg"  class ="card" width ="300px" height ="50px"></td>
 </tr>
 
 </table>
@@ -183,11 +171,11 @@
 		
 			<h2>Quick Links...</h2><br>
 			<ul>
-			<a href="online payment.html"><li>Make Online Payment</li></a>
-			<a href="make a complaint.html"><li>Make A Complaint</li></a>
+			<a href="#"><li>Make Online Payment</li></a>
+			<a href="#"><li>Make A Complaint</li></a>
 			<a href="#"><li>Inquires</li></a>
-			<a href="Make_a_claim.html"><li>Make A Claim</li></a>
-			<a href="ourstory.html"><li>Contact Us</li></a>
+			<a href="#"><li>Make A Claim</li></a>
+			<a href="#"><li>Contact Us</li></a>
 			<a href="#"><li>Terms & Conditions</li></a>
 			</ul>
 		</div>

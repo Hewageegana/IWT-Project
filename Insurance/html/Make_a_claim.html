@@ -33,9 +33,9 @@
 	<ul class="nav">
 		
 		<li class="linein"><a href="homepage.html">Home</a></li>
+		<li class="linein"><a href="quotation.html">Motor Insurance</a></li>
 		<li class="linein"><a href="online payment.html">Make A Online Payment</a></li>
 		<li class="linein"><a href="Make_a_claim.html">Make A Claim</a></li>
-		<li class="linein"><a href="ourstory.html">Our Story</a></li>
 		<li class="linein"><a href="approvedgarages.html">Services</a></li>
 
 		
@@ -58,19 +58,6 @@
 	</ul>
 </header><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <center><div id="slider">
 		<figure class="fig">
 			
@@ -83,7 +70,7 @@
 		</figure>
 	</div> </center>
 	
-	<h2><b>MOTOR CLAIMS</b></h2>
+	<h2 style="padding: 20px;"><b>MOTOR CLAIMS</b></h2>
 <div class="here"><p class="head">Here's how you can get claiming..!</p></div><br>
 <p class="pc"><div class="uld"><ul class="para" type="radio"><li> If you meet with an accident, give us a call on <font color="blue">011 275 5456</font> to report the accident</li><br>
 <li> You may choose to do the inspection yourself by taking a few pictures and sending them across to us OR you can ask for an assessor to be sent to wherever you are.</li><br>
@@ -95,14 +82,10 @@
   <div class="formdiv" float="center">
 
 
+	<form action="connect.php" method="post">
 
-
-
-
-
-	<form action="../php/connectform.php" method="post">
 	Your Name<br>
-	<input type="text" name="name" style="width:55%;  height:32px; outline: none;" placeholder="Enter Your Name" required><br/><br/>
+	<input type="text" name="firstname" style="width:55%;  height:32px; outline: none;" placeholder="Enter Your Name" required><br/><br/>
 	Phone Number<br>
 	<select style="height: 32px;">
 	<option>+94 Sri-Lanka</option>
@@ -116,18 +99,13 @@
 	E-Mail<br>
 	<input type="email" id="myEmail"style="width:55%; height:33px; outline: none;" placeholder="Enter your E-mail"name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required><br><br>
 	Policy Number(optional)<br>
-	<input type="policynumber" style="width:55%;  height:32px; outline: none;"name="policy" pattern ="{0-9}{10}" placeholder="Enter Policy Number" required><br><br>
+	<input type="number" style="width:55%;  height:32px; outline: none;"name="policy" pattern ="{0-9}{10}" placeholder="Enter Policy Number" required><br><br>
 
 
 
-	<input type="submit"class="button" id="submitBtn" onclick="message('button')" value="submit">
+	<input type="submit"class="button" id="submitBtn" value="submit">
 
 </form></div><br>
-
-
-
-
-
 <center><button class="buttn1" type="button" id="button1" onclick="getData('button1')">DOWNLOAD MOTOR CLAIM FORM</button></center><br>
 <center><a href="../images/claimx.pdf"><p style="font-family: arial; font-style: none; font-size: 18px;" class="text1" id="para"></p></a></center><br>
 
@@ -141,10 +119,6 @@
 
 	
 </body>
-
-
-
-
 <footer>
 <div class="footer">
 	<div class="footer-content">
@@ -178,11 +152,11 @@
 		
 			<h2>Quick Links...</h2><br>
 			<ul>
-				<a href="online payment.html"><li>Make Online Payment</li></a>
-			<a href="make a complaint.html"><li>Make A Complaint</li></a>
-			<a href="#"><li>Inquires</li></a>
+			<a href="#"><li>Make Online Payment</li></a>
+			<a href="#"><li>Make A Complaint</li></a>
 			<a href="Make_a_claim.html"><li>Make A Claim</li></a>
-			<a href="ourstory.html"><li>Contact Us</li></a>
+			<a href="#"><li>Contact Us</li></a>
+			<a href="ourstory.html"><li>About Us</li></a>
 			<a href="#"><li>Terms & Conditions</li></a>
 			</ul>
 		</div>
